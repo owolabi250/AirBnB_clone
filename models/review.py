@@ -1,15 +1,10 @@
 #!/usr/bin/python3
-"""a class Review that inherits from BaseModel"""
-
+"""Contains the Review model"""
 from models.base_model import BaseModel
 
 
 class Review(BaseModel):
-    """Public class attributes"""
+    """Implements the Review model"""
     place_id = ""
     user_id = ""
     text = ""
-
-    def __init__(self, *args, **kwargs):
-        """Initiliazes an instance"""
-        super().__init__(*args, **kwargs)
